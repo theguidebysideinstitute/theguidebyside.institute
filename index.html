@@ -250,6 +250,41 @@
   }
   .pathway-card .btn-pathway-white:hover { opacity: .9; transform: translateY(-1px); }
 
+  /* ── FLAGSHIP PROGRAM ── */
+  #flagship-program { background: var(--sage-lt); }
+
+  .track-grid {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .track-card {
+    border: 1.5px solid var(--border); border-radius: 14px;
+    padding: 32px 28px; background: var(--white);
+    transition: box-shadow .2s;
+  }
+  .track-card:hover { box-shadow: 0 8px 30px rgba(30,77,140,.08); }
+
+  .track-card h3 {
+    font-size: 1.15rem; color: var(--ocean); margin-bottom: 14px;
+  }
+
+  .track-card p { font-size: 0.92rem; color: var(--slate); opacity: .8; line-height: 1.6; }
+
+  .flagship-cta {
+    text-align: center; background: var(--ocean); color: var(--white);
+    border-radius: 18px; padding: 40px 32px;
+  }
+
+  .flagship-cta h4 {
+    font-family: 'Playfair Display', serif; font-size: 1.4rem;
+    margin-bottom: 10px; font-weight: 700;
+  }
+
+  .flagship-cta p {
+    font-size: 1rem; color: var(--white); opacity: .85; margin-bottom: 22px;
+  }
+
   /* ── WORKSHOP TABLE ── */
   #workshops { background: var(--white); }
 
@@ -321,6 +356,43 @@
 
   .wellbeing-cta { text-align: center; }
 
+  /* ── RESOURCES VAULT ── */
+  #resources-vault { background: var(--white); }
+
+  .vault-grid {
+    display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+  }
+
+  .vault-card {
+    background: var(--mint); border-radius: 14px;
+    padding: 28px 26px; border: 1.5px solid var(--border);
+    display: flex; flex-direction: column; justify-content: space-between;
+    transition: box-shadow .2s;
+  }
+  .vault-card:hover { box-shadow: 0 8px 30px rgba(30,77,140,.08); }
+
+  .vault-tag {
+    display: inline-block; font-size: 0.72rem; font-weight: 700;
+    letter-spacing: .05em; text-transform: uppercase;
+    background: var(--ocean-lt); color: var(--ocean);
+    padding: 4px 10px; border-radius: 20px; margin-bottom: 16px;
+  }
+
+  .vault-card h3 {
+    font-size: 1.1rem; color: var(--ocean); margin-bottom: 10px;
+  }
+
+  .vault-card p {
+    font-size: 0.9rem; color: var(--slate); opacity: .8;
+    line-height: 1.55; margin-bottom: 20px;
+  }
+
+  .vault-card a {
+    color: var(--sage); font-weight: 700; font-size: 0.9rem;
+    text-decoration: none;
+  }
+  .vault-card a:hover { text-decoration: underline; }
+
   /* ── FOOTER BANNER ── */
   #resource-banner {
     background: var(--ocean);
@@ -375,6 +447,8 @@
     .matrix-grid { grid-template-columns: 1fr; }
     .pathway-grid { grid-template-columns: 1fr; }
     .wellbeing-grid { grid-template-columns: 1fr; }
+    .track-grid { grid-template-columns: 1fr; }
+    .vault-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
   }
 
@@ -393,10 +467,10 @@
   </div>
   <ul class="nav-links">
     <li><a href="#reality">Why Us</a></li>
-    <li><a href="#pathways">Institutional</a></li>
+    <li><a href="#flagship-program">Institutional</a></li>
     <li><a href="#workshops">Workshops</a></li>
     <li><a href="#wellbeing">Well-Being</a></li>
-    <li><a href="#resources">Resources</a></li>
+    <li><a href="#resources-vault">Resources</a></li>
   </ul>
   <a href="mailto:guidebysidestudio@gmail.com" class="btn btn-ocean">Book a Consultation</a>
 </nav>
@@ -473,6 +547,34 @@
   </div>
 </section>
 
+<!-- FLAGSHIP PROGRAM -->
+<section id="flagship-program">
+  <p class="section-label fade-up">Flagship Institutional Initiative</p>
+  <h2 class="section-title fade-up">Future-Ready Classrooms: The "AI-Ready School"<br/>2-Day Whole-Community Program</h2>
+  <p class="section-sub fade-up">Fragmented training fails because it leaves students and parents out of the equation. We bring your entire ecosystem onto a unified, safe, and elite AI literacy framework in a single 2-day live workshop activation.</p>
+
+  <div class="track-grid">
+    <div class="track-card fade-up">
+      <h3>Track 1: Teachers (The Anchor)</h3>
+      <p>Slash lesson-planning time by up to 40%, re-engineer assessments to be AI-resistant, and co-create an institutional classroom code of conduct.</p>
+    </div>
+    <div class="track-card fade-up" style="transition-delay:.1s">
+      <h3>Track 2: Students Grade 7+ (The Differentiator)</h3>
+      <p>Master prompt engineering to treat AI as a cognitive thinking partner, build skepticism against algorithmic bias, and navigate digital safety and deepfakes.</p>
+    </div>
+    <div class="track-card fade-up" style="transition-delay:.2s">
+      <h3>Track 3: Parents (The Closer)</h3>
+      <p>Understand the exact landscape of tools kids use, establish home guardrails that promote tech literacy, and eliminate friction around screen limits.</p>
+    </div>
+  </div>
+
+  <div class="flagship-cta fade-up">
+    <h4>Deploy this comprehensive ecosystem framework at your school</h4>
+    <p>All tracks, live on-site execution, and complete take-home toolkit included in a single contract.</p>
+    <a href="mailto:guidebysidestudio@gmail.com?subject=Inquiry: AI-Ready School Institutional Briefing" class="btn-pathway-white">Schedule an Institutional Briefing</a>
+  </div>
+</section>
+
 <!-- DUAL PATHWAY -->
 <section id="pathways">
   <p class="section-label fade-up">Our Ecosystem</p>
@@ -486,6 +588,7 @@
       <p class="desc">Deep, semester-long engagements that create lasting culture change — not one-off workshops that fade.</p>
       <ul>
         <li>Semester-long school partnerships</li>
+        <li>Flagship: "AI-Ready School" 2-Day Program (Teachers, Parents, Students)</li>
         <li>Principal leadership coaching</li>
         <li>Curriculum design sprints</li>
         <li>Whole-staff active learning training</li>
@@ -605,8 +708,44 @@
   </div>
 </section>
 
+<!-- RESOURCES VAULT -->
+<section id="resources-vault">
+  <p class="section-label fade-up">Open-Access Resource Vault</p>
+  <h2 class="section-title fade-up">Pedagogical Frameworks &amp; AI Tools</h2>
+  <p class="section-sub fade-up">Practical, evidence-backed tools designed to help school leaders, educators, and parents navigate classroom upskilling on Monday morning.</p>
+
+  <div class="vault-grid">
+    <div class="vault-card fade-up">
+      <div>
+        <span class="vault-tag">For School Management</span>
+        <h3>The Institutional AI Policy Starter Kit</h3>
+        <p>A complete framework to establish ethical guidelines, plagiarism benchmarks, and deployment steps for integrating AI safely into your school.</p>
+      </div>
+      <a href="mailto:guidebysidestudio@gmail.com?subject=Request: AI Policy Starter Kit Template">Download Template (PDF) →</a>
+    </div>
+
+    <div class="vault-card fade-up" style="transition-delay:.1s">
+      <div>
+        <span class="vault-tag">For Educators</span>
+        <h3>Zero-Prep AI Lesson Plan &amp; Prompt Suite</h3>
+        <p>A ready-made, interactive Canva lesson plan example paired with the exact multi-turn prompt sequence to slash prep time by hours.</p>
+      </div>
+      <a href="mailto:guidebysidestudio@gmail.com?subject=Request: AI Lesson Plan and Prompt Suite">Access Canva Template →</a>
+    </div>
+
+    <div class="vault-card fade-up" style="transition-delay:.2s">
+      <div>
+        <span class="vault-tag">Pedagogical Framework</span>
+        <h3>The Octalysis Gamification Blueprint</h3>
+        <p>A reusable instructional template mapping out core behavior loops to turn dry, lecture-heavy slide readings into active educational quests.</p>
+      </div>
+      <a href="mailto:guidebysidestudio@gmail.com?subject=Request: Octalysis Gamification Blueprint">Download Blueprint →</a>
+    </div>
+  </div>
+</section>
+
 <!-- RESOURCE BANNER -->
-<div id="resource-banner" id="resources">
+<div id="resource-banner">
   <p>Not ready for a full course? <span>Take our resources to work on Monday.</span></p>
   <a href="#" class="btn-banner">Download Free Lesson Planning Templates</a>
 </div>
